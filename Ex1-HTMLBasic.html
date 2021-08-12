@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML Basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#introduce">Giới Thiệu</a>
+            <a href="#schedule">Lịch Thực Tập</a>
+            <a href="#contract">Form Liên Hệ</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h1>Dat Pham T. là ai?</h1>
+            <h2>Đến từ đâu</h2>
+            <h3>Thông tin liên hệ</h3>
+            <h4>Lịch thực tập như thế nào </h4>
+            <h5>Đẹp trai không</h5>
+            <h6>Test các thẻ h</h6>
+        </aside>
+        
+        <div>
+            <img src="./avt.jpg" alt="ảnh đại diện">
+            <h2 id="introduce">I)Giới Thiệu</h2>
+            <p>Họ và tên: Phạm Thành Đạt</p>
+            <p>Giới tính: Nam</p>
+            <p>SĐT: 0773354138</p>
+            <p>Quê quán: Quảng Bình</p>
+            <p>Sở thích:</p>
+            <ol>
+                <li>Du lịch</li>
+                <li>Chụp ảnh</li>
+                <li>Chơi game</li>
+                <li>Nge nhạc</li>
+            </ol>
+            <ul>
+                <li>Du lịch</li>
+                <li>Chụp ảnh</li>
+                <li>Chơi game</li>
+                <li>Nge nhạc</li>
+            </ul>
+            <p>Hiện tại đang học <i>IT</i></p>
+        </div>
+        <div>
+            <h2 id="schedule">II)Lịch Thực Tập</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                        <th>Thứ 7</th>
+                        <th>Chủ nhật</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sáng(10h-12h)</td>
+                        <td>FE training</td>
+                        <td></td>
+                        <td>FE training</td>
+                        <td></td>
+                        <td>FE training</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Chiều(13h40-15h)</td>
+                        <td>BE training</td>
+                        <td></td>
+                        <td>BE training</td>
+                        <td></td>
+                        <td>BE training</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <div>
+            <h2 id="contract">III)Form liên hệ với Đạt</h2>
+            <form method="POST">
+                <label for="name" >Người gửi</label>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="content-type">Loại nội dung</label>
+                <select name="content-type" id="content-type">
+                    <option value="0">Công việc</option>
+                    <option value="1">Riêng tư</option>
+                    <option value="2">Nội dung khẩn</option>
+                </select>
+                <br>
+                <label for="content">Nội dung</label>
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">Gửi</button>
+            </form>
+            <section>
+                <h4>Ngoài ra có thể liên lạc bằng một số  mạng xã hội như</h4>
+                <article>
+                <h4>Facebook: https://www.facebook.com/thanhdat267/</h4>
+                <p>Facebook (cách điệu là facebook) là một phương tiện truyền thông xã hội và dịch vụ mạng xã hội trực tuyến thành lập vào năm 2004 của Mỹ có trụ sở tại Menlo Park, California. Nó được Mark Zuckerberg, cùng với các sinh viên Đại học Harvard và bạn cùng phòng là Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, Chris Hughes sáng lập. Đây được coi là một trong những công ty công nghệ Big Four cùng với Amazon, Apple và Google.[6][7]</p> 
+                </article>  
+                <article>
+                    <h4>Zalo: 0773354138</h4>
+                    <p>Zalo là một ứng dụng OTT, cho phép người dùng nhắn tin, gọi điện cho những người dùng khác trên nền tảng di động và máy tính. Là một ứng dụng của VNG - Công ty công nghệ của Việt Nam, xuất hiện trên thị trường vào năm 2012, cho đến nay, Zalo đã trở thành một ứng dụng vô cùng phổ biến.</p>
+                </article>  
+            </section> 
+            <section>
+                <h4>Trang chủ Monstar-lab</h4>
+                <iframe src="https://monstar-lab.com/global/" title="Trang chủ Monstar-lab"></iframe>
+            </section> 
+            <section>
+                <h4>Video</h4>
+                <video width="280" height="155" controls>
+                    <source src="https://www.youtube.com/watch?v=XqUy9L6TUTA" type="video/mp4"> 
+                </video>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <span>Đây là bài tập 1 HTML basic với nội dùng về bản thân ở <strong>Monstar-lab</strong></span>
+        <time>10:10</time>
+    </footer>
+</body>
+</html>
