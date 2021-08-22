@@ -4,117 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Flone | Black friday Home</title>
+    <script src="https://kit.fontawesome.com/ccd4eab307.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="page-header">
         <div class="header-top">
-            <ul class="header-top-left">
-                <li>
-                    <select name="language" id="language">
-                        <option value="english">English</option>
-                        <option value="french">French</option>
-                        <option value="germany">Germany</option>
-                    </select>
-                </li>
-                <li>
-                    <select name="currency" id="currency">
-                        <option value="usd">USD</option>
-                        <option value="eur">EUR</option>
-                        <option value="gbp">GBP</option>
-                    </select>
-                </li>
-                <li>
-                    <span>Call Us 3965410</span>
-                </li>
-            </ul>
-            <p class="header-top-right">Free delivery on order over <span>€200.00</span></p>  
-        </div>
-        <div class="header-bottom">
-            <a href="#">
-                <img src="#" alt="Logo" class="image image-logo">
-            </a>
-            <nav class="header-nav">
-                <ul class="header-menu">
-                    <li><a href="#">Zuhause</a></li>
-                    <li><a href="#">Geschäft</a></li>
-                    <li><a href="#">Sammlung</a></li>
-                    <li><a href="#">Seiten</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Kontaktiere uns</a></li>
+            <div class="container-fluid">
+                <ul class="header-top-left">
+                    <li>
+                        <select name="language" id="language">
+                            <option value="english">English</option>
+                            <option value="french">French</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="currency" id="currency">
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span>Call Us 3965410</span>
+                    </li>
                 </ul>
-            </nav>
-    
-            <ul class="header-actions">
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-                <li><a href="#"><i></i></a></li>
-            </ul>
+                <p class="header-top-right">Free delivery on order over <span>€200.00</span></p>  
+            </div>
+        </div>
+        <div class="header-bottom container-fluid ">
+            <div class="row">
+                <a href="#" class="header-logo col-3">
+                    <img src="images/logo.png" alt="Logo" class="img img-logo">
+                </a>
+                <nav class="header-nav col-6">
+                    <ul class="header-menu">
+                        <li><a href="#">Zuhause<i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Geschäft<i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Sammlung</a></li>
+                        <li><a href="#">Seiten<i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Blog<i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#">Kontaktiere uns</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-actions col-3">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="far fa-user"></i></i></li>
+                    <li><a href="#"><i class="fas fa-random"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
         </div>
     </header>
     
     <main class="page-main">
         <section  class="section-offer">
-            <div class="container">
-                <h1>Black Friday <br>Hot Deal!</h1>
+            <div class="container offer-content">
+                <h1 class="offer-title">Black Friday <br>Hot Deal!</h1>
                 <ul class="offer-countdown">
                     <li>
                         <span>0</span>
                         <br>
-                        <span>DAYS</span>
+                        <span class="countdown-time">DAYS</span>
                     </li>
                     <li>
                         <span>0</span>
                         <br>
-                        <span>HOURS</span>
+                        <span class="countdown-time">HOURS</span>
                     </li>
                     <li>
                         <span>0</span>
                         <br>
-                        <span>MINUTES</span>
+                        <span class="countdown-time">MINUTES</span>
                     </li>
                     <li>
                         <span>0</span>
                         <br>
-                        <span>SECS</span>
+                        <span class="countdown-time">SECS</span>
                     </li>
                 </ul>
-                <a href="#" class="button button-offer">MORE OFFER</a>
+                <a href="#" class="btn btn-offer">MORE OFFER</a>
             </div>
         </section>
         <section class="section-sale">
             <div class="container">
-                <ul class="sale-list">
-                    <li class="sale-item">
+                <ul class="sale-list row">
+                    <li class="sale-item col-4">
                         <a href="#">
-                            <img src="" alt="Image product sale" class="image image-sale">
+                            <img src="images/sale-1.png" alt="Image product sale" class="image image-sale">
                         </a>
                         <div class="sale-content">
                             <p>-70% Off</p  >
                             <h3>Easy Chair</h3>
-                            <a href="#"><i></i></a>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </li>
-                    <li class="sale-item">
+                    <li class="sale-item col-4">
                         <a href="#">
-                            <img src="" alt="Image product sale">
+                            <img src="images/sale-2.png" alt="Image product sale">
                         </a>
                         <div class="sale-content">
                             <p>-70% Off</pn>
                             <h3>Soft Sofa</h3>
-                            <a href="#"><i></i></a>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </li>
-                    <li class="sale-item">
+                    <li class="sale-item col-4">
                         <a href="#">
-                            <img src="" alt="Image product sale">
+                            <img src="images/sale-3.png" alt="Image product sale">
                         </a>
                         <div class="sale-content">
                             <p>-70% Off</p>
                             <h3>Office Chair</h3>
-                            <a href="#"><i></i></a>
+                            <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </li>
                 </ul>
@@ -128,98 +134,299 @@
                     <li><a href="#">Best Sellers</a></li>
                     <li><a href="#">Sale Items</a></li>
                 </ul>
-                <ul class="product-list">
-                    <li>
+                <ul class="product-list row">
+                    <li class="col-3">
                         <a href="#">
-                            <img src="" alt="Image product 1">
-                            <img src="" alt="Image product 2">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
                         </a>
                         <div class="badges">
-                            <span class="discount">-10%</span>
-                            <span class="status">New</span>
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
                         </div>
-                        <ul class="product-actions">
+                        <!-- <ul class="product-actions">
                             <li><a href="#"><i></i></a></li>
                             <li><a href="#"><i></i></a></li>
                             <li><a href="#"><i></i></a></li>
-                        </ul>
+                        </ul> -->
                         <div class="product-content">
                             <div class="content-left">
                                 <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
-                                <span class="product-price">€9.54</span>
-                                <span> - </span>
-                                <span class="product-price-sale">€10.6</span>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
                             </div>
                            <div class="content-right">
-                                <a href="#"><i></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
                            </div>
                         </div>
                     </li>
-                    ...
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
+                    <li class="col-3">
+                        <a href="#">
+                            <img src="images/product-1-1.jpg" alt="Image product 1">
+                            <!-- <img src="" alt="Image product 2" > -->
+                        </a>
+                        <div class="badges">
+                            <p class="discount">-10%</p>
+                            <p class="status">New</p>
+                        </div>
+                        <!-- <ul class="product-actions">
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                            <li><a href="#"><i></i></a></li>
+                        </ul> -->
+                        <div class="product-content">
+                            <div class="content-left">
+                                <h3 class="product-name"><a href="">Lorem ipsum chair two</a></h3>
+                                <div class="price">
+                                    <span class="product-price">€9.54 - </span>
+                                    <span class="product-price-sale">€10.6</span>
+                                </div>
+                            </div>
+                           <div class="content-right">
+                                <a href="#"><i class="far fa-heart"></i></a>
+                           </div>
+                        </div>
+                    </li>
                 </ul>
-                <a href="#" class="btn btn-more-products">VIEW MORE PRODUCTS</a>
+                <div class="more-product">
+                    <a href="#" class="btn btn-more-products">VIEW MORE PRODUCTS</a>
+                </div>
+              
             </div>
         </section>
-        <section class="section-banner">
-            <div class="banner-left">
-                <a href="#">
-                    <img src="#" alt="Image Banner Left">
-                </a>
-                <a href="#" class="button button-banner-left">SHOP NOW</a>
-            </div>
-            <div class="banner-right">
-                <div class="banner-right-top">
+        <section class="section-banner row">
+            <div class="container">
+                <div class="banner-left col-6">
                     <a href="#">
-                        <img src="#" alt="Image Banner Big Sale">
+                        <img src="images/banner-1.png" alt="Image Banner Left">
                     </a>
-                    <div class="content-banner-right-top">
-                        <span>Black Friday</span>
-                        <h2>Big Sale</h2>
-                    </div>
-                    <a href="#"><i></i></a>
+                    <a href="#" class="btn btn-banner-left">SHOP NOW</a>
                 </div>
-                <div class="banner-right-bot">
-                    <a href="#">
-                        <img src="#" alt="Image Banner Big Sale">
-                    </a>
-                    <div class="content-banner-right-bot">
-                        <span>BLACK</span>
-                        <h2>FRIDAY</h2>
-                        <p>SALE UP TO 50%</p>
+                <div class="banner-right col-6">
+                    <div class="banner-right-top">
+                        <a href="#">
+                            <img src="images/banner-2.png" alt="Image Banner Big Sale">
+                        </a>
+                        <div class="content-banner-right-top">
+                            <span>Black Friday</span>
+                            <h2>Big Sale</h2>
+                        </div>
+                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
                     </div>
-                    <a href="#"><i></i></a>
+                    <div class="banner-right-bot">
+                        <a href="#">
+                            <img src="images/banner-3.png" alt="Image Banner Big Sale">
+                        </a>
+                        <div class="content-banner-right-bot">
+                            <span>BLACK</span>
+                            <h2>FRIDAY</h2>
+                            <p>SALE UP TO 50%</p>
+                        </div>
+                        <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section-support">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="Image Animated" class="image image-animated">
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="Image Font" class="image image-font">
-                        </a>
-                        <p>FREE SHIPPING ON ALL ORDER</p>
+            <div class="container ">
+                <ul class="support-list row">
+                    <li class=" col-4">
+                        <div class="shipping-sp support-item">
+                            <a href="#">
+                                <img src="images/support-1.png" alt="Image Animated" class="img img-animated">
+                            </a>
+                            <a href="#">
+                                <img src="images/font-1.png" alt="Image Font" class="img img-font">
+                            </a>
+                            <p>FREE SHIPPING ON ALL ORDER</p>
+                        </div>
+                       
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="Image Animated" class="image image-animated">
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="Image Font" class="image image-font">
-                        </a>
-                        <p>FREE SHIPPING ON ALL ORDER</p>
+                    <li class=" col-4">
+                        <div class="money-sp support-item">
+                            <a href="#">
+                                <img src="images/support-2.png" alt="Image Animated" class="img img-animated">
+                            </a>
+                            <a href="#">
+                                <img src="images/font-2.png" alt="Image Font" class="img img-font">
+                            </a>
+                            <p>FREE SHIPPING ON ALL ORDER</p>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="Image Animated" class="image image-animated">
-                        </a>
-                        <a href="#">
-                            <img src="#" alt="Image Font" class="image image-font">
-                        </a>
-                        <p>FREE SHIPPING ON ALL ORDER</p>
+                    <li class=" col-4">
+                        <div class="disscount-sp support-item ">
+                            <a href="#">
+                                <img src="images/support-3.png" alt="Image Animated" class="img img-animated">
+                            </a>
+                            <a href="#">
+                                <img src="images/font-3.png" alt="Image Font" class="img img-font">
+                            </a>
+                            <p>FREE SHIPPING ON ALL ORDER</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -228,21 +435,15 @@
             <div class="container">
                 <ul class="carousel-list">
                     <li class="carousel-item">
-                        <img src="#" alt="Image Carousel 1" class="image image-carousel">
                         <div class="content-carousel">
-                            <img src="#" alt="Avatar in banner" class="image image-circle">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <i class="icon icon-banner"></i>
-                            <h5>John Doe</h5>
-                            <span>Customer</span>
-                        </div>
-                    </li>
-                    <li class="carousel-item">
-                        <img src="#" alt="Image Carousel 1"  class="image image-carousel">
-                        <div class="content-carousel">
-                            <img src="#" alt="Avatar in banner" class="image image-circle">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <i class="icon icon-banner"></i>
+                            <img src="images/carousel-avt.png" alt="Avatar in banner" class="image image-circle">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis <br>
+                                atque laborum aliquid, dolorum recusandae facere, <br>
+                                voluptatum debitis veritatis assumenda iure natus maiores fugit ullam delectus minus hic necessitatibus 
+                                reiciendis.
+                            </p>
+                            <i class="fa fa-map-signs"></i>
                             <h5>John Doe</h5>
                             <span>Customer</span>
                         </div>
@@ -250,41 +451,43 @@
                 </ul>
             </div>
         </section>
-        <section class="section-subscribe">
+        <section class="section-newsletter">
             <div class="container">
-                <h2 class="section-title">Join With Us!</h2>
+                <h2 class="title-join-with-us">Join With Us!</h2>
+
                 <p>Subscribe to our newsletter to receive news on update</p>
-                <form action="">
-                    <input type="email" alt="Your Email Address" name="email" placeholder="Your Email Address">
-                    <button type="submit" class="button button-subscribe">SUBSCRIBE</button>
+
+                <form action="" method="POST">
+                    <input type="email" placeholder="Your Email Address"> <br>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
             </div>
         </section>
-        <section class="section-images-slider">
+        <section class="section-slider">
             <ul class="images-slider">
                 <li>
                     <a href="#">
-                        <img src="#" alt="image slider 1">
+                        <img src="images/slider-1.jpg" alt="image slider 1">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="image slider 1">
+                        <img src="images/slider-2.jpg" alt="image slider 1">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="image slider 1">
+                        <img src="images/slider-3.jpg" alt="image slider 1">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="image slider 1">
+                        <img src="images/slider-4.jpg" alt="image slider 1">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="image slider 1">
+                        <img src="images/slider-3.jpg" alt="image slider 1">
                     </a>
                 </li>
             </ul>
@@ -292,49 +495,48 @@
     </main>
 
     <footer class="page-footer">
-        <div class="container">
-            <div class="footer-col">
-                <a href="#">
-                    <img src="#" alt="Logo">
-                    <p>© 2021 Flone. <br> All Rights Reserved</p>
-                </a>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">ABOUT US</h3>
-                <ul class="footer-list">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Store location</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Orders tracking</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">USEFUL LINKS</h3>
-                <ul class="footer-list">
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Support Policy</a></li>
-                    <li><a href="#">Size guide</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">FOLLOW US</h3>
-                <ul class="footer-list">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Youtubes</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3 class="footer-title">SUBSCRIBE</h3>
-                <p>Get E-mail updates about our latest shop and special offers.</p>
-                <form action="">
-                    <input type="email" name="email" placeholder="Enter your email address...">
-                    <button type="submit" class="button button-subscribe">SUBSCRIBE</button>
-                </form>
-            </div>
-        </div>
-    </footer>
+		<div class="container">
+			<div class="footer-col">
+				<img src="https://flone.reactdemo.hasthemes.com/assets/img/logo/logo.png" alt="logo">
+				<span class="copyright">@ 2021 <a href="">Flone</a>.</span><span class="f-18">All Rights Reserved</span>
+			</div>
+			<div class="footer-col">
+				<h4 class="title-footer">ABOUT US</h4>
+				<ul>
+					<li><a href="">About us</a></li>
+					<li><a href="">Store location</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Orders tracking</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 class="title-footer">USEFUL LINKS</h4>
+				<ul>
+					<li><a href="">Returns</a></li>
+					<li><a href="">Support Policy</a></li>
+					<li><a href="">Size guide</a></li>
+					<li><a href="">FAQS</a></li>
+
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 class="title-footer">FOLLOW US</h4>
+				<ul>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Youtube</a></li>
+				</ul>
+			</div>
+			<div class="footer-col-2">
+				<h4 class="title-footer">SUBSCRIBE</h4>
+				<p>Get E-mail updates about our latest shop <br>and special offers.</p>
+				<form action="" method="post">				
+					<input type="text" name="email" placeholder="Enter your email address...">
+					<button type="submit">SUBSCRIBE</button>
+				</form>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
