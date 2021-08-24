@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
 * {
     box-sizing: border-box;
 }
 body {
+    font-family: 'Poppins', sans-serif; 
     font-size: 16px;
     color: #696969;
     font-weight: 400;
@@ -47,6 +50,9 @@ a img {
   float: left;
   padding: 0 15px;
 }
+.col-2 {
+    width: 16.66666666667%;
+}
 .col-3 {
   width: 25%;
 }
@@ -55,6 +61,9 @@ a img {
 }
 .col-6 {
   width: 50%;
+}
+.col-8 {
+    width: 66.666666667%;
 }
 
 /* Header */
@@ -97,6 +106,7 @@ a img {
 }
 .header-nav {
     text-align: center;
+    display: inline-block;
 }
 .header-nav li {
     font-size: 20px;
@@ -110,7 +120,8 @@ a img {
     color: #a749ff;
 }
 .header-actions {
-    padding-left: 50px;
+    float: right;
+    padding-right: 0px;
 }
 .header-actions li {
     display: inline-block;
@@ -164,12 +175,9 @@ a img {
     border: 1px solid #e90042;
     background-color: #e90042;
 }
+/* Section Sale */
 .section-sale {
     margin-top: 100px;
-}
-.sale-item {
-    position: relative;
-    overflow: hidden;
 }
 .sale-content {
     position: absolute;
@@ -198,9 +206,15 @@ a img {
     border: 2px solid #e90042;
     border-radius: 100%;
 }
-.sale-list a img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); 
+.sale-item {
+    position: relative;
+    overflow: hidden;
+}
+.sale-item a img:hover {
+    transform: scale(1.2);
+}
+.sale-item a img {
+    transition: transform 1s ease;
 }
 .section-title {
     font-size: 48px;
@@ -563,4 +577,26 @@ input[type="text"] {
 }
 .footer-col-2 button {
     border: none;
+}
+@media only screen and (max-width: 1201px) {
+    .product-list li {
+        width: 33.33333%;
+    }
+    .header-bottom ul {
+        margin: 0;
+        padding: 0;
+        list-style: outside none none;
+    }   
+}
+@media only screen and (max-width: 1023px) {
+    .product-list li {
+        width: 50%;
+    }
+    .support-list li {
+        width: 50%;
+        margin-top: 20px;
+    }
+    body {
+        font-size: 13px;
+    }
 }
