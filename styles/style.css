@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url(reset.css);
 * {
     box-sizing: border-box;
 }
@@ -24,11 +25,17 @@ a img {
 .container-fluid {
     max-width: 1750px;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 15px;
 }
 .btn {
     border: none;
-    background: none;
+    background-color: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 .clearfix::after {
     content: "";
@@ -67,6 +74,9 @@ a img {
 }
 
 /* Header */
+.menu-icon button{
+    display: none;
+}
 .page-header {
     background-color: #fff;
 }
@@ -104,39 +114,87 @@ a img {
 .header-top-right span {
     color: red;
 }
+.header-bottom {
+	position: relative;
+	z-index: 999;
+    display: block;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+}
+.header-logo {
+	line-height: 94px;
+}
+.header-logo img {
+    vertical-align: middle;
+}
+.header-menu>li {
+	display: inline-block;
+	line-height: 94px;
+	padding-left: 15px;
+	font-size: 20px; 
+}
+.header-menu>li:first-child {
+	padding-left: 0;
+}
+.header-actions>li {
+	display: inline-block;
+	line-height: 94px;
+}
+.header-menu a:hover {
+	color:  #6f42c1;
+}
 .header-nav {
-    text-align: center;
-    display: inline-block;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
-.header-nav li {
-    font-size: 20px;
-    display: inline-block;
-    padding: 0 15px;
-}
-.header-nav i {
-    font-size: 12px;
-}
-.header-nav li:hover {
-    color: #a749ff;
+.header-nav>ul {
+	text-align: center;
 }
 .header-actions {
-    float: right;
-    padding-right: 0px;
+	display: inline-block;
+	float: right;
 }
 .header-actions li {
-    display: inline-block;
-    padding: 0 13px;
+	position: relative;
+	padding-left: 15px;
 }
-.header-bottom {
-    z-index: 999;
-    padding: 32px 40px;
-} 
+.header-actions a:hover {
+	color: #6f42c1;
+}
+.header-actions button:hover {
+	color: #6f42c1;
+}
 
+.header-actions li:first-child {
+	padding-left: 0;
+}
+.counter {
+	display: inline-block;
+	position: absolute;
+	top:20px;
+	line-height: 21px;
+	right: -10px;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+}
+.page-header {
+	margin: 0;
+	padding: 0;
+}
 /* Main */
 .section-offer {
     background-image: url("../images/offer.jpg");
     height: 800px;
     background-size: cover;
+    background-position: 50%;
     align-items: center;
 }
 .offer-content {
@@ -498,7 +556,9 @@ a img {
     background-color: #a749ff;
 }
 /* Section Slider */
-
+.section-slider {
+    height: 300px;
+}
 .section-slider li {
     float: left;
     width: 20%;
@@ -506,13 +566,14 @@ a img {
 .section-slider img {
     width: 100%;
     vertical-align: top;
+    height: 100%;
 }
-/* Footer */
+/* Footer*/
 .page-footer {
-    margin-top: 300px;
+	margin-top: 0;
 	background-color: #f6f6f8;
 	color: #5d5d5d;
-	padding: 100px 0;
+	padding: 80px 0;
 	position: relative;
 }
 .page-footer a:hover {
@@ -575,10 +636,10 @@ input[type="text"] {
 	background-color: transparent;
 	border-bottom: 2px solid #ebebeb;
 }
-.footer-col-2 button {
-    border: none;
+.page-footer h4 {
+    margin-bottom: 15px;
 }
-@media only screen and (max-width: 1201px) {
+@media only screen and (max-width: 1199px) {
     .product-list li {
         width: 33.33333%;
     }
@@ -586,7 +647,21 @@ input[type="text"] {
         margin: 0;
         padding: 0;
         list-style: outside none none;
-    }   
+    } 
+    .carousel-item p {
+        padding: 0 24px;
+        font-size: 15px;
+    }  
+    .section-slider {
+        height: 180px;
+        width: 100%;
+    }
+    .container-fluid {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
 }
 @media only screen and (max-width: 1023px) {
     .product-list li {
@@ -598,5 +673,26 @@ input[type="text"] {
     }
     body {
         font-size: 13px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .menu-icon button{
+        display: unset;
+    }
+    .header-top {
+        display: none;
+    }
+
+    .footer-col-2 {
+        padding-left: 30px;
+        width: 66.666667%;
+    }
+    .footer-col {
+        width: 33.333333333%;
+        float: left;
+    }
+    .page-footer h4 {
+        margin-top: 30px;
     }
 }
