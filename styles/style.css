@@ -84,6 +84,10 @@ button {
     line-height: 60px;
     border-bottom: 1px solid #d5d4d4;
 }
+.header-top-content {
+    display: flex;
+    justify-content: space-between;
+}
 .header-top-left {
     display: inline-block;
 }
@@ -104,7 +108,6 @@ button {
     padding-left: 0px;
 }
 .header-top-right {
-    float: right;
     line-height: 60px;
 }
 .header-top-left select {
@@ -118,6 +121,10 @@ button {
 	position: relative;
 	z-index: 999;
     display: block;
+}
+.header-bottom-content {
+    display: flex;
+    justify-content: space-between;
 }
 .fixed {
 	position: fixed;
@@ -156,7 +163,6 @@ button {
 }
 .header-actions {
 	display: inline-block;
-	float: right;
 }
 .header-actions li {
 	position: relative;
@@ -331,9 +337,11 @@ button {
 .content-left{
     display: inline-block;
 }
-.content-right {
-    float: right;
+.product-content {
+    display: flex;
+    justify-content: space-between;
 }
+
 .content-right i {
     color: #fa6bff;
     font-size: 20px;
@@ -560,8 +568,11 @@ button {
     height: 300px;
 }
 .section-slider li {
-    float: left;
     width: 20%;
+}
+.images-slider {
+    display: flex;
+    flex-direction: row;
 }
 .section-slider img {
     width: 100%;
@@ -661,7 +672,6 @@ input[type="text"] {
         margin: 0 auto;
         padding: 0 15px;
     }
-
 }
 @media only screen and (max-width: 1023px) {
     .product-list li {
